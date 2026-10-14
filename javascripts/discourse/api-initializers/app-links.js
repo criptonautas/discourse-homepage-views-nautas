@@ -58,6 +58,24 @@ export default apiInitializer(() => {
         window.location.search +
         window.location.hash;
       url.searchParams.set("volver", here);
+
+      // Most apps lose ?volver on the way in (a login redirect, their own router), so
+      // the return page also travels in a short cookie on the domain both hosts share,
+      // naming its target so other hosts (e.g. the login page) leave it alone.
+      const ours = window.location.hostname.split(".").reverse();
+      const theirs = url.hostname.split(".").reverse();
+      let shared = 0;
+      while (shared < ours.length && ours[shared] === theirs[shared]) {
+        shared++;
+      }
+      if (shared >= 2) {
+        const domain = ours.slice(0, shared).reverse().join(".");
+        const value = encodeURIComponent(
+          JSON.stringify({ to: url.hostname, back: here })
+        );
+        document.cookie = `comunidad_volver=${value}; domain=${domain}; path=/; max-age=600; secure; samesite=lax`;
+      }
+
       window.location.assign(url.href);
     },
     true

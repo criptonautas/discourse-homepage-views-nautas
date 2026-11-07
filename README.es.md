@@ -1,17 +1,17 @@
 # Homepage Views Nautas
 
-[![Discourse Theme](https://github.com/somos-criptonautas/discourse-homepage-views-nautas/actions/workflows/discourse-theme.yml/badge.svg)](https://github.com/somos-criptonautas/discourse-homepage-views-nautas/actions/workflows/discourse-theme.yml)
+[![Discourse Theme](https://github.com/criptonautas/discourse-homepage-views-nautas/actions/workflows/discourse-theme.yml/badge.svg)](https://github.com/criptonautas/discourse-homepage-views-nautas/actions/workflows/discourse-theme.yml)
 
 [ENGLISH](README.md) | **ESPAÑOL**
 
 Mantenido por Criptonautas. Sin afiliación ni respaldo de Discourse (Civilized Discourse Construction Kit, Inc.).
 
-Componente de tema de Discourse para que cada persona elija cómo se abre la comunidad: **mínima** (Dumbcourse, solo texto), **normal** (el foro) o **anonist** (chat IA). Pensado para la [app Android de Criptonautas](https://github.com/somos-criptonautas/comunidad-criptonautas-app), donde muestra «Elige tu vista» a pantalla completa la primera vez que se abre.
+Componente de tema de Discourse para que cada persona elija cómo se abre la comunidad: **mínima** (Dumbcourse, solo texto), **normal** (el foro) o **anonist** (chat IA). Pensado para la [app Android de Criptonautas](https://github.com/criptonautas/comunidad-criptonautas-app), donde muestra «Elige tu vista» a pantalla completa la primera vez que se abre.
 
 ## Requisitos
 
 - Discourse 2026.x.
-- [discourse-phosphor-duotone-icons](https://github.com/somos-criptonautas/discourse-phosphor-duotone-icons) para los iconos de cada opción.
+- [discourse-phosphor-duotone-icons](https://github.com/criptonautas/discourse-phosphor-duotone-icons) para los iconos de cada opción.
 - Para *simple*: Dumbcourse activado en [discourse-dumb-nautas](https://github.com/satonotdead/discourse-dumb-nautas).
 - Para *anonist*: Discourse AI con la página de conversaciones del bot activada.
 
